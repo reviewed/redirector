@@ -15,8 +15,7 @@ class Redirector
     "www.refrigeratorinfo.com" => "refrigerators",
     "www.televisioninfo.com" => "televisions",
     "www.camcorderinfo.com" => "camcorders",
-    "www.digitalcamerainfo.com" => "cameras",
-    "www.test.com" => "test"
+    "www.digitalcamerainfo.com" => "cameras"
   }
 
   class << self
