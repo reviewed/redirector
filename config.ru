@@ -21,11 +21,10 @@ class Redirector
 
   class << self
     def call(env)
-      domain = env['HTTP_HOST']
-      subdomain = CATEGORY_MAP[domain]
+      request = Rack::Request.new(env)
+      subdomain = CATEGORY_MAP[request.host]
       if subdomain
-        uri = env['REQUEST_URI'].gsub("http://#{domain}", '')
-        url = "http://#{subdomain}.reviewed.com#{uri}"
+        url = "http://#{subdomain}.reviewed.com#{request.fullpath}"
         response = [301, {"Location" => url}, ["Redirecting you to our new home at Reviewed.com"]]
       else
         response = [500, {"Content-type" => "text/html"}, ["No redirect destination found for #{domain}"]]
