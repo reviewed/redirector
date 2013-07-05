@@ -25,7 +25,7 @@ class Redirector
       subdomain = CATEGORY_MAP[domain]
       if subdomain
         uri = env['REQUEST_URI'].gsub("http://#{domain}", '')
-        url = "#{subdomain}.reviewed.com#{uri}"
+        url = "http://#{subdomain}.reviewed.com#{uri}"
         response = [301, {"Location" => url}, ["Redirecting you to our new home at Reviewed.com"]]
       else
         response = [500, {"Content-type" => "text/html"}, ["No redirect destination found for #{domain}"]]
