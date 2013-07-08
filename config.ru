@@ -7,7 +7,7 @@ class Redirector
     "www.computermonitorinfo.com" => "monitors",
     "www.grillsinfo.com" => "grills",
     "www.dishwashersinfo.com" => "dishwashers",
-    "www.videoprojectorinfo.com" => "videoprojectors",
+    "www.videoprojectorinfo.com" => "projectors",
     "www.tabletreaderinfo.com" => "tablets",
     "www.oveninfo.com" => "ovens",
     "www.headphoneinfo.com" => "headphones",
