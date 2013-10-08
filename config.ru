@@ -16,7 +16,8 @@ class Redirector
     "www.televisioninfo.com" => "televisions",
     "www.camcorderinfo.com" => "camcorders",
     "www.digitalcamerainfo.com" => "cameras",
-    "www2.grillsinfo.com" => "grills"
+    "www2.grillsinfo.com" => "grills",
+    "www.camcorderinfo.jp" => "camcorders"
   }
 
   class << self
