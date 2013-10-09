@@ -29,7 +29,7 @@ class Redirector
         url = "http://#{subdomain}.reviewed.com#{request.fullpath}"
         response = [301, {"Location" => url}, ["Redirecting you to our new home at Reviewed.com"]]
       else
-        response = [500, {"Content-type" => "text/html"}, ["No redirect destination found for #{domain}"]]
+        response = [500, {"Content-type" => "text/html"}, ["No redirect destination found for #{subdomain}"]]
       end
       response
     end
