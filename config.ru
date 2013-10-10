@@ -17,8 +17,15 @@ class Redirector
     "www.camcorderinfo.com" => "camcorders",
     "www.digitalcamerainfo.com" => "cameras",
     "www.espressomakerinfo.com" => "espresso",
-    "www2.grillsinfo.com" => "grills",
-    "www.camcorderinfo.jp" => "camcorders"
+
+    # internationals
+    "www.camcorderinfo.co.uk" => "camcorders",
+    "www.camcorderinfo.jp" => "camcorders",
+    "www.camcorderinfo.de" => "camcorders",
+    "www.digitalcamerainfo.de" => "cameras",
+
+    # misc
+    "www2.grillsinfo.com" => "grills"
   }
 
   class << self
