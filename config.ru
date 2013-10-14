@@ -17,6 +17,7 @@ class Redirector
     "www.camcorderinfo.com" => "camcorders",
     "www.digitalcamerainfo.com" => "cameras",
     "www.espressomakerinfo.com" => "espresso",
+    "www.vacationcruisesinfo.com" => "cruises",
 
     # internationals
     "www.camcorderinfo.co.uk" => "camcorders",
